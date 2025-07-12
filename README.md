@@ -20,11 +20,11 @@ This is a notes integrated productivity website that can be used for daily Leetc
 
 **Components**
 **Clock**
-**Time Display and Total Study time**
-![Clock Screenshot](screenshots/clock.png)
-**Focus Session**
-![Focus session Screenshot](screenshots/focus_session.png)
------------------------------------------------------------------------------
+  - **Time Display and Total Study time**
+  ![Clock Screenshot](screenshots/clock.png)
+  - **Focus Session**
+  ![Focus session Screenshot](screenshots/focus_session.png)
+
 **Leetcode Notes**
 **Input**
 [Leetcode notes Screenshot](screenshots/leetcode_notes_input.png)
