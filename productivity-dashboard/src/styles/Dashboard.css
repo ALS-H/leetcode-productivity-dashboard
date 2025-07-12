@@ -1,0 +1,173 @@
+/* GLOBAL RESET */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI Italic', cursive, 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  text-align: right;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #CBF1F5; /* matches your .card background */
+  border-bottom: 1px solid #a0d8e8; /* soft border like the rest */
+  border-radius: 0 0 16px 16px; /* smooth bottom edge */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* subtle shadow */
+}
+
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.logout-btn {
+  padding: 0.35rem 0.75rem;
+  background-color: #073a3dcc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c62828;
+}
+
+/* Auth Loading / Require Message */
+.dashboard-loading,
+.dashboard-auth-required {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Main Dashboard Container */
+.dashboard-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 2fr 320px 1.2fr;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+/* Responsive Grid Collapse */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .dashboard-title {
+    font-size: 2.2rem;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .left-column,
+  .middle-column,
+  .right-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Columns */
+.left-column,
+.middle-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.middle-column {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+  background-color: #CBF1F5;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Scrollbars for side columns */
+.left-column,
+.right-column {
+  max-height: 85vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #54b4be #68c5cf;
+}
+
+.left-column::-webkit-scrollbar,
+.right-column::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left-column::-webkit-scrollbar-track,
+.right-column::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.left-column::-webkit-scrollbar-thumb,
+.right-column::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0;
+  border-radius: 10px;
+}
+
+/* Ensure images and canvas resize correctly */
+.card img,
+.card canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth layout transitions */
+.dashboard-container,
+.card {
+  transition: all 0.3s ease-in-out;
+}

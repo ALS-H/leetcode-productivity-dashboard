@@ -1,0 +1,202 @@
+/* LeetCodeNoteCard.css */
+.note-card {
+  background: #71C9CE;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  user-select: none;
+}
+
+#link:hover{
+    color: #073d5a;
+}
+
+.note-card:hover {
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.15);
+}
+
+.note-card.expanded {
+  background: #1c8e94;
+}
+
+.note-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-card-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  word-break: break-word;
+  flex: 1;
+}
+
+.note-card-edit-btn,
+.note-card-delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.note-card-edit-btn:hover {
+  color: #007bff;
+}
+
+.note-card-delete-btn:hover {
+  color: #dc3545;
+}
+
+.note-card-content {
+  margin: 16px 0;
+  padding: 16px;
+  background-color: #CBF1F5; /* light background for contrast */
+  color: #212529; /* darker text for visibility */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s;
+}
+
+.note-card-link {
+  display: inline-block;
+  margin-bottom: 8px;
+  color:black;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.note-card-link:hover {
+  text-decoration: underline;
+}
+
+.note-card-tags {
+  margin-top: 8px;
+}
+
+.note-card-tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 3px 8px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  user-select: none;
+}
+
+/* Modal styles */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #238e98;
+  padding: 28px 36px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  overflow-y: auto;
+  max-height: 90vh;
+  color: #0a2540;
+  font-family: 'Segoe UI Italic', cursive, 'Segoe UI', sans-serif;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #073d5a;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="url"],
+.modal-content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #8ecae6;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-top: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="url"]:focus,
+.modal-content textarea:focus {
+  border-color: #219ebc;
+  outline: none;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.modal-buttons button:first-child {
+  background-color: #07747a;
+  color: white;
+  font-weight: 700;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #4fa6ad;
+}
+
+.modal-buttons button:last-child {
+  background-color: #d0e7f2;
+  color: #127a99;
+  font-weight: 600;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #a8cde3;
+}

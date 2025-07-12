@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules
+
+# Firebase credentials
+serviceAccountKey.json
+
+# Environment variables
+.env
+
+# Build output
+dist

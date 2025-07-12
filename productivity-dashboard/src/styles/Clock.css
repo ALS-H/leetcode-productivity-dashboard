@@ -1,0 +1,104 @@
+.clock-card {
+  max-width: 280px;
+  margin: 0.5rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background-color: #A6E3E9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI Italic', cursive, 'Segoe UI', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  line-height: 1.1;
+}
+
+.clock-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.2rem;
+  font-family: 'Segoe UI Italic', cursive, 'Segoe UI', sans-serif;
+}
+
+.clock-time {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0.5rem 0 0.8rem 0;
+  letter-spacing: 1.2px;
+  font-family: 'Segoe UI Italic', cursive, 'Segoe UI', sans-serif;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.timer-controls button {
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  color: black;
+  background-color: #33a3a9;
+  box-shadow: 0 3px 8px rgba(51, 163, 169, 0.5);
+}
+
+.timer-controls button:hover {
+  background-color: #2b8286;
+}
+
+.tip {
+  font-size: 0.7rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+/* Pomodoro status lines in Clock view */
+.clock-card p[style] {
+  font-family: 'Segoe UI Italic', cursive, 'Segoe UI', sans-serif;
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* --- NEW STYLES FOR SESSION LIST --- */
+.session-list {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.session-item {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  margin-left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #d32f2f;
+  transition: color 0.2s ease;
+}
+
+.delete-btn:hover {
+  color: #b71c1c;
+}

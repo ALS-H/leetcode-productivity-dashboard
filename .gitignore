@@ -1,0 +1,16 @@
+# Root
+node_modules/
+.env
+package-lock.json
+
+# Frontend
+/productivity-dashboard/node_modules
+/productivity-dashboard/.env
+/productivity-dashboard/.next
+/productivity-dashboard/dist
+/productivity-dashboard/build
+
+# Backend
+/backend/node_modules
+/backend/.env
+/backend/dist
