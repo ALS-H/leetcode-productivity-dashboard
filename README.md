@@ -25,16 +25,16 @@ This is a notes integrated productivity website that can be used for daily Leetc
   - **Focus Session**
   ![Focus session Screenshot](screenshots/focus_session.png)
 
-**Leetcode Notes**
-**Input**
-[Leetcode notes Screenshot](screenshots/leetcode_notes_input.png)
-**Note Card Expanded based on the selected Tag**
-![Notes card Screenshot](screenshots/notes_card.png)
-**Edit Notes**
-![Edit notes Screenshot](screenshots/edit_notes_card.png)
------------------------------------------------------------------------------
-**Todo**
-![Todo Screenshot](screenshots/todo.png)
------------------------------------------------------------------------------
-**Motivation**
-![Quotes Screenshot](screenshots/motivation.png)
+- **Leetcode Notes**
+  - **Input**
+    ![Leetcode notes Screenshot](screenshots/leetcode_notes_input.png)
+  - **Note Card Expanded based on the selected Tag**
+    ![Notes card Screenshot](screenshots/notes_card.png)
+  - **Edit Notes**
+    ![Edit notes Screenshot](screenshots/edit_notes_card.png)
+
+- **Todo**
+  ![Todo Screenshot](screenshots/todo.png)
+
+- **Motivation**
+  ![Quotes Screenshot](screenshots/motivation.png)
