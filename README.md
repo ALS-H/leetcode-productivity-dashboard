@@ -19,7 +19,7 @@ This is a notes integrated productivity website that can be used for daily Leetc
 ![Dashboard Screenshot](screenshots/dashboard.png)
 
 **Components**
-**Clock**
+- **Clock**
   - **Time Display and Total Study time**
   ![Clock Screenshot](screenshots/clock.png)
   - **Focus Session**
